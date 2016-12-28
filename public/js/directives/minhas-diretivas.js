@@ -8,10 +8,10 @@ angular.module('minhasDiretivas',[])
 			titulo:'@'
 		};
 
- 		ddo.templateUrl = 'js/directives/meu-painel.html'; 
-               
+ 		ddo.templateUrl = 'js/directives/meu-painel.html';             
 		return ddo;
 })
+
 .directive('minhaFoto', function(){
 		var ddo = {};
 		ddo.restrict = 'AE';
@@ -22,10 +22,10 @@ angular.module('minhasDiretivas',[])
 			url:'@'
 		};
 
- 		ddo.template = '<img class="img-responsive center-block" ng-src="{{url}}"  alt="{{titulo}}">'; 
-               
+ 		ddo.template = '<img class="img-responsive center-block" ng-src="{{url}}"  alt="{{titulo}}">';               
 		return ddo;
 })
+
 .directive('meuBotaoPerigo',function(){
 	var ddo = {};
 
@@ -36,10 +36,6 @@ angular.module('minhasDiretivas',[])
 		acao: '&'
 	}
 
-
-	ddo.template = '<button type="submit" class="btn btn-danger btn-block" ng-click="acao()">{{nome}}</button>';
-	 
-
-
+	ddo.template = '<button type="submit" class="btn btn-danger btn-block" ng-click="acao()">{{nome}}</button>'; 
 	return ddo;
 });

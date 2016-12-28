@@ -1,6 +1,6 @@
-var Datastore = require('nedb')
-    ,dbName = 'data.db'
-    ,db;
+var Datastore = require('nedb'),
+    dbName = 'data.db',
+    db;
 
 if(!db) {
     db = new Datastore({
